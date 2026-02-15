@@ -9,6 +9,14 @@ SELECT
     ,MAX(order_date) AS last_date
 FROM order_details;
 
+-- Count total orders and items ordered
+-- Note: Returns the total number of unique orders and total items ordered.
+
+SELECT
+    COUNT(DISTINCT order_id) AS total_orders
+    ,COUNT(*) AS total_items_ordered
+FROM order_details;
+
 -- Identify which orders had the most items
 -- Note: Returns all orders tied for the maximum item count.
 
