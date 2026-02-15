@@ -5,11 +5,11 @@
 -- Note: Counts all rows in menu_items.
 
 SELECT 
-    COUNT(item_name) AS number_of_items
+    COUNT(*) AS number_of_items
 FROM menu_items;
 
 -- Identify the least and most expensive items
--- Note: Returns one row for min and max price. When tied, min and max are equal.
+-- Note: Returns two rows: one for the most expensive item and one for the least expensive item. When tied, min and max are equal.
 
 WITH temp_most_expensive AS (
     SELECT 
@@ -43,8 +43,8 @@ ORDER BY mi.price DESC;
 
 SELECT 
     COUNT(1) AS number_of_items
-    ,MIN(1) AS minimum_price
-    ,MAX(1) AS maximum_price
+    ,MIN(price) AS minimum_price
+    ,MAX(price) AS maximum_price
 FROM menu_items
 GROUP BY category
 HAVING LOWER(category) = 'italian';
@@ -54,7 +54,7 @@ HAVING LOWER(category) = 'italian';
 
 SELECT
     category
-    ,COUNT(category)
-    ,AVG(price)
+    ,COUNT(category) AS number_of_items
+    ,AVG(price) AS average_price
 FROM menu_items
 GROUP BY category;

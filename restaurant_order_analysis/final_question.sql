@@ -17,4 +17,4 @@ SELECT TOP 1
     order_id
     ,spent_money
 FROM temp_spent_order
-ORDER BY spent_money DESC
+ORDER BY spent_money DESC;

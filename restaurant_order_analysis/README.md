@@ -6,7 +6,7 @@ This project analyzes order data from a fictitious international cuisine restaur
 ## Dataset
 **Restaurant Orders** - A quarter's worth of orders from a restaurant with international cuisine
 - **Records**: 12,266
-- **Fields**: 8
+- **Fields**: 9
 - **Structure**: Multiple tables
 - **Type**: MySQL file converted to T-SQL
 
