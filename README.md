@@ -1,4 +1,4 @@
-"# Maven Analytics Practice Projects
+# Maven Analytics Practice Projects
 
 ## Overview
 This repository contains my solutions for Maven Analytics practice projects. It is a public repository showcasing various data analytics and data engineering solutions.
