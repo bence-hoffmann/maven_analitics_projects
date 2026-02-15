@@ -2,7 +2,7 @@
 -- Run these against the restaurant_db schema.
 
 -- Find the least and most ordered items and their categories
--- Note: Returns one row for min and max order counts by item.
+-- Note: Returns all items with the highest and lowest order counts (may be multiple rows if there are ties).
 
 WITH item_counts AS (
     SELECT
