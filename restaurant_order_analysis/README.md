@@ -15,6 +15,13 @@ This project analyzes order data from a fictitious international cuisine restaur
 - `restaurant_db_data_dictionary.csv` - Data dictionary for reference
 - SQL queries for analysis
 
+## Query Files
+
+- **objective_1.sql** - Menu analysis (item counts, price ranges, category breakdown)
+- **objective_2.sql** - Order analysis (date range, item counts, order sizes)
+- **objective_3.sql** - Combined analysis (popular items, top spending orders, order details)
+- **final_question.sql** - Highest spend order lookup
+
 ## Analysis Objectives
 
 ### Objective 1: Menu Analysis
@@ -40,3 +47,7 @@ Combine menu_items and order_details tables to:
 
 ### Final Question
 How much was the most expensive order in the dataset?
+
+## Usage
+
+Run each query file against the `restaurant_db` database created by `create_restaurant_db.sql`. Execute queries in order (objective_1 → objective_2 → objective_3 → final_question) for a logical progression through the analysis objectives.
