@@ -15,6 +15,9 @@ Each project folder contains:
 - Python scripts for data analysis and processing
 - Data dictionaries and documentation
 
+### Current Projects
+- [Restaurant Order Analysis](restaurant_order_analysis/README.md) - Analyze order data to identify popular menu items and cuisine types
+
 ---
 
 Feel free to explore and use these solutions as reference for Maven Analytics practice projects! 
